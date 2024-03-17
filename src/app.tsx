@@ -1,26 +1,14 @@
 import "@wukla/react/styles.css";
 
-import { DocumentEditor } from "@wukla/react/editor";
-import { useMeasure } from "react-use";
+import { DocumentEditor } from "@wukla/react";
 
 import { document } from "./document";
 
 export function App() {
-  const [ref, { height, width }] = useMeasure<HTMLDivElement>();
-
   return (
     <DocumentEditor.Root document={document}>
       <div className="flex gap-4 p-4">
-        <div className="fixed inset-0 h-screen w-screen" ref={ref}>
-          {height > 0 ? (
-            <DocumentEditor.Canvas
-              dimensions={{
-                height,
-                width,
-              }}
-            />
-          ) : null}
-        </div>
+        <DocumentEditor.Canvas className="fixed inset-0 h-screen w-screen" />
 
         <DocumentEditor.SideBar
           onSubmit={(data) => {
