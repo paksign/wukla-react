@@ -7,6 +7,9 @@ import {
 
 export const document: Document = {
   createdAt: "2024-02-21T06:12:02.866Z",
+  data: {
+    stampDuty: null,
+  },
   fields: [
     {
       height: 24,
@@ -76,6 +79,7 @@ export const document: Document = {
       width: 1684,
     },
   ],
+  people: 0,
   recipients: [
     {
       email: "ali@example.com",
@@ -87,7 +91,7 @@ export const document: Document = {
   ],
   signed: null,
   signedUrl: null,
-  signers: 0,
+  signers: [],
   source: "/document.pdf",
   sourceUrl: "/document.pdf",
   status: DocumentStatus.Draft,

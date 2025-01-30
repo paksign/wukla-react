@@ -14,7 +14,7 @@ export function App() {
         width="100vw"
       />
 
-      <DocumentEditor.SideBar
+      <DocumentEditor.SideBar.Root
         onSave={(data) => {
           console.log("onSave", data);
         }}

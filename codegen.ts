@@ -13,7 +13,7 @@ const config: CodegenConfig = {
     },
   },
   overwrite: true,
-  schema: "https://api.emiratessign.ae/graphql",
+  schema: "https://api.paksign.pk/graphql",
 };
 
 export default config;
