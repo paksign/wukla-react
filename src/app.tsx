@@ -24,6 +24,7 @@ export function App() {
         top="4"
         right="4"
         maxHeight="600px"
+        maxWidth="400px"
         position="fixed"
         className="shadow-2xl bg-white rounded-lg border border-gray-200"
       />
